@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard - Tito Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tito Salon - Panel Admin</h1>
+        <nav>
+            <a href="index.html">Logout</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Input Kedatangan Pelanggan</h2>
+        <p>Gunakan formulir di bawah ini untuk mencatat reservasi atau kedatangan langsung (on-the-spot).</p>
+        
+        <form>
+            <label>Nama Pelanggan:</label>
+            <input type="text" placeholder="Nama lengkap pelanggan" required>
+
+            <label>Tipe Kedatangan:</label>
+            <select>
+                <option value="pesan_tempat">Pesan di Tempat (Walk-in)</option>
+                <option value="reservasi">Reservasi (Booking)</option>
+            </select>
+
+            <label>Jenis Layanan:</label>
+            <select>
+                <option value="potong">Potong Rambut</option>
+                <option value="warna">Warna Rambut</option>
+                <option value="creambath">Creambath / Cuci Rambut</option>
+                <option value="styling">Styling</option>
+                <option value="makeup">Makeup</option>
+                <option value="lainnya">Lain-lain</option>
+            </select>
+
+            <label>Tanggal & Waktu:</label>
+            <div style="display: flex; gap: 10px;">
+                <input type="date" style="flex: 1;">
+                <input type="time" style="flex: 1;">
+            </div>
+
+            <label>Estimasi Harga (Rp):</label>
+            <input type="number" placeholder="Contoh: 150000">
+
+            <label>Keterangan Tambahan:</label>
+            <textarea rows="2" placeholder="Catatan seperti: Selesai jam 12:00, atau permintaan khusus warna."></textarea>
+
+            <button type="button" class="btn">SIMPAN DATA</button>
+        </form>
+
+        <hr style="margin-top: 40px; border: 1px solid #F8C8DC;">
+
+        <h2>Daftar Aktivitas & Reservasi</h2>
+        <p><i>Gunakan kolom status untuk memperbarui progres pelanggan.</i></p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama</th>
+                    <th>Tipe</th>
+                    <th>Layanan</th>
+                    <th>Waktu & Tanggal</th>
+                    <th>Status</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nilam</td>
+                    <td><b>Reservasi</b></td>
+                    <td>Warna Rambut</td>
+                    <td>2026-04-02 | 10:00</td>
+                    <td>
+                        <select style="margin: 0; padding: 5px;">
+                            <option value="res">Reservasi</option>
+                            <option value="pro">Proses</option>
+                            <option value="sel" selected>Selesai</option>
+                        </select>
+                    </td>
+                    <td>Selesai Jam 13:00</td>
+                </tr>
+                <tr>
+                    <td>Ummul</td>
+                    <td><b>Walk-in</b></td>
+                    <td>Potong Rambut</td>
+                    <td>2026-04-02 | 14:00</td>
+                    <td>
+                        <select style="margin: 0; padding: 5px;">
+                            <option value="res">Reservasi</option>
+                            <option value="pro" selected>Proses</option>
+                            <option value="sel">Selesai</option>
+                        </select>
+                    </td>
+                    <td>Sedang dikerjakan</td>
+                </tr>
+                <tr>
+                    <td>Nita</td>
+                    <td><b>Reservasi</b></td>
+                    <td>Makeup</td>
+                    <td>2026-04-03 | 08:00</td>
+                    <td>
+                        <select style="margin: 0; padding: 5px;">
+                            <option value="res" selected>Reservasi</option>
+                            <option value="pro">Proses</option>
+                            <option value="sel">Selesai</option>
+                        </select>
+                    </td>
+                    <td>Makeup Wisuda</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Tito Salon - Sistem Manajemen Internal</p>
+    </footer>
+</body>
+</html>

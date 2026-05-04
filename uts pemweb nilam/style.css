@@ -1,0 +1,124 @@
+/* style.css */
+:root {
+    --pink-pastel: #F8C8DC;
+    --deep-rose: #D4AFB9;
+    --soft-white: #ffffff;
+    --bg-color: #FFF5F7;
+    --text-color: #4A4A4A;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--pink-pastel);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid var(--deep-rose);
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #63445D;
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Container Utama */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: var(--soft-white);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Heading */
+h1, h2, h3 {
+    color: #63445D;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid var(--pink-pastel);
+}
+
+th {
+    background-color: var(--pink-pastel);
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Formulir */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid var(--pink-pastel);
+    border-radius: 5px;
+}
+
+.btn {
+    background-color: var(--deep-rose);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #b88d99;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--pink-pastel);
+    margin-top: 50px;
+    font-size: 10pt;
+}
+
+.img-salon {
+    width: 70%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
